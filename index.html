@@ -12,11 +12,46 @@
   <div id="left">
     <h1><img src="logo" alt="logo"> Pi.tech</h1>
     <p class="credit">Photo by <a
-        href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Halie
+        href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Halie
         West</a> on <a
         href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
   </div>
-  <div id="right"></div>
+  <div id="right">
+    <p>This is a dummy website for displaying real sign up page. This can also be used for other project for sign-up or
+      sign-in page.</p>
+    <form>
+      <div>
+        <label for="first-name">First Name</label><br>
+        <input type="text" id="first-name" name="first-name" placeholder="Thor" required minlength="4" value="Thor">
+      </div>
+      <div>
+        <label for="last-name">Last Name</label><br>
+        <input type="text" id="last-name" name="last-name" placeholder="Odinson" required value="Odinson">
+      </div>
+      <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="pi@pi.com" required value="pi@pi.com">
+      </div>
+      <div>
+        <label for="phone">Phone Number</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required value="9832-392-239">
+      </div>
+      <div>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+      </div>
+      <div>
+        <label for="confirm-password">Confirm Password</label><br>
+        <input type="password" id="confirm-password" name="confirm-password" required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+      </div>
+      <button type="submit" value="submit" name="submit" id="submit">Create Account</button>
+    </form>
+    <p>Already have an account?<a href="">Log in</a></p>
+  </div>
 </body>
 
 </html>

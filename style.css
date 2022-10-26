@@ -14,7 +14,6 @@ body {
 }
 
 #left {
-  /* background-color: rgb(0, 255, 0); */
   background-image: url(green-leaf-plant.jpg);
   font-size: 3rem;
   display: flex;
@@ -39,5 +38,49 @@ h1 {
 }
 
 #right {
-  background-color: rgb(227, 227, 65);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#right p {
+  margin: 2%;
+  font-size: 1.6rem;
+}
+
+form {
+  font-size: 1.8rem;
+  margin: 5% 10%;
+  background-color: rgba(255, 255, 255, 0.533);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: none;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
+
+#submit{
+  text-align: center;
+  height: 26px;
+  width: max-content;
+  padding: 3px 8px;
+  background-color: #596D48;
+  border: 1px solid #40552e;
+  border-radius: 6px;
+  margin-top: 10px;
 }
